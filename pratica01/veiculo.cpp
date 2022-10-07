@@ -3,15 +3,15 @@
 
 using namespace std;
 
-void Veiculo::setNumRodas(int Nrodas)
+void Vehicle::setNumRodas(int Nrodas)
 {
     // Rodas roda[rodas];
-    this->numRodas=Nrodas;
-    Roda* rodas[Nrodas]; // errado
-    cout<<"\nRodas settadas";
+    this->numRodas = Nrodas;
+    Roda *rodas[Nrodas]; // errado
+    cout << "\nRodas settadas";
 }
 
-int Veiculo::getNumRodas()
+int Vehicle::getNumRodas()
 {
     return this->numRodas;
 }

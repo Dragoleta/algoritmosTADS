@@ -1,19 +1,22 @@
 #include <iostream>
-#include "veiculo.h"
+#include "veiculo2.h"
 
 using namespace std;
 
-int main(){
+int main()
+{
+    // Vehicle * terr, * aqua, * aero;
 
-// Veiculo * terr, * aqua, * aereo;
+    // Vehicle *terr = new Terrestrial("VT1");
+    // Vehicle *terr = (Vehicle *)terr;
+    // terr->setMaxCapacity(45);
 
-Veiculo * terr = new Terrestre("VT1");
-terr->setCapacidadeMax(45);
+    // Vehicle *aqua = new Aquatic("VQ1");
+    // Vehicle *aqua = (Vehicle *)aqua;
+    // Vehicle * aqua->setLoadMax(12.5);
 
-Veiculo * aqua = new Aquatico("VQ1");
-Veiculo * aqua->setCargaMax(12.5);
-
-Veiculo * aereo = new Aereo("VA1");
-((Veiculo *) aereo)->setMaxSpeed(1040.5);
-
+    Vehicle *aero = new Aero("VA1");
+    // Vehicle *aero = (Vehicle *)aero;
+    // aero->setMaxSpeed(1040.5);
+    aero->move();
 };

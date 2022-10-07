@@ -1,6 +1,5 @@
 #include <iostream>
 
-
 using namespace std;
 
 class Roda
@@ -14,7 +13,7 @@ public:
     ~Roda() { cout << "\nDeleted!"; }
 };
 
-class Veiculo
+class Vehicle
 {
     string nome;
 
@@ -23,7 +22,7 @@ private:
     Roda *rodas;
 
 public:
-    Veiculo(const char *param)
+    Vehicle(const char *param)
     {
         this->nome = string(param);
         this->rodas = NULL;
@@ -33,11 +32,9 @@ public:
     void setNumRodas(int Nrodas);
     int getNumRodas();
 
-    ~Veiculo()
+    ~Vehicle()
     {
         cout << "\nDeleted!";
-        delete [] this->rodas;
-
+        delete[] this->rodas;
     };
 };
-

@@ -1,28 +1,34 @@
-template <class T>
-void change(T &a, T &b)
+namespace functions
 {
-    float aux = a;
-    float a1 = b;
-    float b1 = aux;
-}
 
-int max(const int a, const int b)
-{
-    if (a > b)
+    template <class T>
+    T change(T &a, T &b)
     {
-        return a;
+        float aux = a;
+        a = b;
+        b = aux;
+
+        return a, b;
     }
 
-    return b;
-}
-
-template <class T>
-T min(const T a, const T b)
-{
-    if (a < b)
+    int max(const int a, const int b)
     {
-        return a;
+        if (a > b)
+        {
+            return a;
+        }
+
+        return b;
     }
 
-    return b;
+    template <class T>
+    T min(const T a, const T b)
+    {
+        if (a < b)
+        {
+            return a;
+        }
+
+        return b;
+    }
 }

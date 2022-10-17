@@ -3,6 +3,8 @@
 
 using namespace std;
 
+// Terrestrial
+
 int Terrestrial::getMaxCapacity()
 {
     return cap_max;
@@ -13,6 +15,8 @@ void Terrestrial::setMaxCapacity(int cap_max1)
 };
 void Terrestrial::move() { cout << "Terrestrial Vehicle moved"; };
 
+// Aquatic
+
 float Aquatic::getMaxLoad() { return maxLoad; };
 void Aquatic::setMaxLoad(float newLoad)
 {
@@ -20,9 +24,11 @@ void Aquatic::setMaxLoad(float newLoad)
 };
 void Aquatic::move() { cout << "Aquatic Vehicle moved"; };
 
-float Aero::getMaxSpeed() { return vel_max; };
-void Aero::setMaxSpeed(float newVel)
+// Flyer
+
+float Flyer::getMaxSpeed() { return vel_max; };
+void Flyer::setMaxSpeed(float newVel)
 {
     vel_max = newVel;
 };
-void Aero::move() { cout << "Aero Vehicle moved"; };
+void Flyer::move() { cout << "Flyer Vehicle moved"; };

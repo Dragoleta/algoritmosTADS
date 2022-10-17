@@ -17,7 +17,8 @@ int main()
 
     Vehicle *veiculo1 = new Vehicle("v1");
     veiculo1->setNumRodas(2);
-    // veiculo1->getNumRodas();
+    
+    veiculo1->getNumRodas();
     delete veiculo1;
     // {
     //     Vehicle *veiculo2 = new Vehicle("v2");
